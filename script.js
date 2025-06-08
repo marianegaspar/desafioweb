@@ -66,3 +66,11 @@ const pets = [
   function voltar(){
       window.location.href="index.html";
   }
+
+  function enviarFormulario(event) {
+    event.preventDefault(); // Evita o recarregamento da página
+  
+    alert("Obrigado! Em breve entraremos em contato com você.");
+  
+    event.target.reset();
+  }

@@ -200,6 +200,13 @@ h2{
 
 }
 
+h3{
+    font-family: "Alata", sans-serif;
+    font-size: 32px;
+    text-align: left;
+    padding: 4% 0%;
+}
+
 h4{
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
@@ -225,7 +232,7 @@ p{
     font-size: 14px;
     text-align: center;
     color: #323232;
-    margin: 5%
+    margin: 2%
 }
 
 .steps{
@@ -242,6 +249,7 @@ transition: 0.3s;
 border-radius: 10px; 
 text-align: center;
 background-color: #F3F4F6 ;
+padding: 2%;
 
     
 }
@@ -302,10 +310,10 @@ background-color: #F3F4F6 ;
     color: white;
     text-decoration: none;
     border: none;
-    padding: 2% 2%;
+    padding: 1%;
     transition-duration: 0.4s;
     font-weight: bold;
-    width: 100%;
+    width: 30%;
     border-radius: 12px;
     cursor: pointer;
 }
@@ -341,7 +349,7 @@ background-color: #F3F4F6 ;
 .depoimentos{
      display: flex;
     flex-direction: row;
-    padding: 5% 1% /*top e bottom, left e right respectivamente*/;
+    padding: 3% 1% /*top e bottom, left e right respectivamente*/;
     gap:2%
      
 }
@@ -476,15 +484,17 @@ footer p{
     font-size: 20px;
     margin-bottom: 10px;
     font-family: "Open Sans", sans-serif;
+    padding-bottom: 2%
   }
   
   label {
     display: block;
     margin-bottom: 15px;
     color: #292929;
-    font-family: "Open Sans", sans-serif;
-    font-weight: regular;
+    font-family: "Alata", sans-serif;
+    font-weight: 100;
     font-size: 16px;
+    
   }
   
   input[type="text"],
@@ -500,6 +510,7 @@ footer p{
     box-sizing: border-box;
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
+    background-color: #FFF7ED
 }
   
   textarea {
@@ -522,8 +533,12 @@ footer p{
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold
   }
   
   button:hover {
     background-color: #e65c00;
   }
+
+ 

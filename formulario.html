@@ -26,8 +26,8 @@
         
     </header>
 
-    <form action="enviarFormulario.php" method="POST">
-        <h2>Formulário de Adoção</h2>
+    <form onsubmit="enviarFormulario(event)">
+        <h3>Formulário de Adoção</h2>
       
         <fieldset>
           <legend> Dados Pessoais</legend>
@@ -125,28 +125,12 @@
             <input type="radio" name="concorda" value="nao" required> Não
           </label><br><br>
       
-          <label>Onde o pet ficará durante o dia?<br>
-            <input type="text" name="dia_pet" required>
-          </label><br><br>
-      
-          <label>E à noite?<br>
-            <input type="text" name="noite_pet" required>
-          </label><br><br>
-      
+              
           <label>Tem condições financeiras para manter o pet?<br>
             <input type="radio" name="condicoes" value="sim" required> Sim
             <input type="radio" name="condicoes" value="nao" required> Não
           </label><br><br>
-      
-          <label>O que faria se o pet ficasse doente?<br>
-            <textarea name="doenca_pet" rows="2" required></textarea>
-          </label><br><br>
-      
-          <label>Está ciente de que a adoção é um compromisso a longo prazo?<br>
-            <input type="radio" name="compromisso" value="sim" required> Sim
-            <input type="radio" name="compromisso" value="nao" required> Não
-          </label><br><br>
-      
+                     
           <label>Autoriza visitas da ONG/cuidadores?<br>
             <input type="radio" name="visita_autorizada" value="sim" required> Sim
             <input type="radio" name="visita_autorizada" value="nao" required> Não
@@ -163,8 +147,6 @@
         <br><br>
         <button type="submit">Enviar Formulário</button>
       </form>
-
-
     
     <footer>
         <button class="logo" onclick="voltar()">AdoteAmor</button>
