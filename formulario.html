@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <button class="logo" onclick="voltar()">AdoteAmor</button>
+
+        <div class="header_links">
+        <h6>Adote</h6>
+        <h6>Sobre</h6>
+        <h6>Doe</h6>
+        <h6>Contato</h6>
+         </div>
+
+         <div class="h_buttons">
+        <button class="login">Login</button>
+        <button class="register">Cadastre-se</button>
+         </div>
+        
+    </header>
+
+    <form action="enviarFormulario.php" method="POST">
+        <h2>Formulário de Adoção</h2>
+      
+        <fieldset>
+          <legend> Dados Pessoais</legend>
+          
+          <label>Nome completo:<br>
+            <input type="text" name="nome" required>
+          </label><br><br>
+      
+          <label>Idade:<br>
+            <input type="number" name="idade" required min="18">
+          </label><br><br>
+      
+          <label>CPF:<br>
+            <input type="text" name="cpf" maxlength="14" required>
+          </label><br><br>
+      
+          <label>Telefone:<br>
+            <input type="tel" name="telefone" required>
+          </label><br><br>
+      
+          <label>Email:<br>
+            <input type="email" name="email" required>
+          </label><br><br>
+      
+          <label>Endereço completo:<br>
+            <textarea name="endereco" rows="3" required></textarea>
+          </label>
+        </fieldset>
+      
+        <br>
+      
+        <fieldset>
+          <legend> Sobre a Residência</legend>
+      
+          <label>Você mora em:<br>
+            <select name="tipo_moradia" required>
+              <option value="">Selecione</option>
+              <option value="casa">Casa</option>
+              <option value="apartamento">Apartamento</option>
+              <option value="outro">Outro</option>
+            </select>
+          </label><br><br>
+      
+          <label>O imóvel é:<br>
+            <input type="radio" name="imovel" value="proprio" required> Próprio
+            <input type="radio" name="imovel" value="alugado" required> Alugado
+          </label><br><br>
+      
+          <label>Possui espaço externo?<br>
+            <input type="radio" name="espaco_externo" value="sim" required> Sim
+            <input type="radio" name="espaco_externo" value="nao" required> Não
+          </label><br><br>
+      
+          <label>Local é seguro para animais?<br>
+            <input type="radio" name="local_seguro" value="sim" required> Sim
+            <input type="radio" name="local_seguro" value="nao" required> Não
+          </label><br><br>
+      
+          <label>Se mora em apartamento, o condomínio permite pets?<br>
+            <input type="radio" name="permite_pets" value="sim"> Sim
+            <input type="radio" name="permite_pets" value="nao"> Não
+            <input type="radio" name="permite_pets" value="nao_aplica"> Não se aplica
+          </label><br><br>
+      
+          <label>Quantas pessoas moram na casa?<br>
+            <input type="number" name="qtd_pessoas" required>
+          </label><br><br>
+      
+          <label>Há crianças na residência?<br>
+            <input type="radio" name="criancas" value="sim" required> Sim
+            <input type="radio" name="criancas" value="nao" required> Não
+          </label>
+        </fieldset>
+      
+        <br>
+      
+        <fieldset>
+          <legend> Sobre a Adoção</legend>
+      
+          <label>Por que deseja adotar?<br>
+            <textarea name="motivo_adocao" rows="3" required></textarea>
+          </label><br><br>
+      
+          <label>Já teve pets antes?<br>
+            <input type="radio" name="teve_pets" value="sim" required> Sim
+            <input type="radio" name="teve_pets" value="nao" required> Não
+          </label><br><br>
+      
+          <label>Tem outros animais atualmente? Quais?<br>
+            <textarea name="outros_animais" rows="2"></textarea>
+          </label><br><br>
+      
+          <label>Todos da casa concordam com a adoção?<br>
+            <input type="radio" name="concorda" value="sim" required> Sim
+            <input type="radio" name="concorda" value="nao" required> Não
+          </label><br><br>
+      
+          <label>Onde o pet ficará durante o dia?<br>
+            <input type="text" name="dia_pet" required>
+          </label><br><br>
+      
+          <label>E à noite?<br>
+            <input type="text" name="noite_pet" required>
+          </label><br><br>
+      
+          <label>Tem condições financeiras para manter o pet?<br>
+            <input type="radio" name="condicoes" value="sim" required> Sim
+            <input type="radio" name="condicoes" value="nao" required> Não
+          </label><br><br>
+      
+          <label>O que faria se o pet ficasse doente?<br>
+            <textarea name="doenca_pet" rows="2" required></textarea>
+          </label><br><br>
+      
+          <label>Está ciente de que a adoção é um compromisso a longo prazo?<br>
+            <input type="radio" name="compromisso" value="sim" required> Sim
+            <input type="radio" name="compromisso" value="nao" required> Não
+          </label><br><br>
+      
+          <label>Autoriza visitas da ONG/cuidadores?<br>
+            <input type="radio" name="visita_autorizada" value="sim" required> Sim
+            <input type="radio" name="visita_autorizada" value="nao" required> Não
+          </label>
+        </fieldset>
+      
+        <br>
+      
+        <label>
+          <input type="checkbox" name="termo" required>
+          Declaro que li e concordo com os termos da adoção.
+        </label>
+      
+        <br><br>
+        <button type="submit">Enviar Formulário</button>
+      </form>
+
+
+    
+    <footer>
+        <button class="logo" onclick="voltar()">AdoteAmor</button>
+        <div class="footer_links">
+            <h6>Início</h6>
+            <h6>Adote</h6>
+            <h6>Sobre</h6>
+            <h6>Doe</h6>
+            <h6>Contato</h6>
+        </div>
+        <div class="social_media">
+            <img class="icon" src="./icons/instagram_white.png" alt="Instagram" class="icon-white">
+            <img class="icon" src="./icons/facebook_white.png" alt="Facebook"class="icon-white">
+            <img class="icon" src="./icons/whatsapp_white.png" alt="whatsapp"class="icon-white">
+        </div>
+        <p>&copy; 2023 AdoteAmor. Todos os direitos reservados. </p>  
+         
+        </footer>
+
+    <button id="btnTopo" title="Voltar ao topo">↑</button>    
+    <script src="script.js"></script>
+  
+</body>
+</html>

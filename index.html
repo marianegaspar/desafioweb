@@ -8,17 +8,21 @@
     </head>
     <body>
     <header>
+
         <button class="logo">AdoteAmor</button>
+
         <div class="header_links">
         <h6>Adote</h6>
         <h6>Sobre</h6>
         <h6>Doe</h6>
         <h6>Contato</h6>
          </div>
+
          <div class="h_buttons">
         <button class="login">Login</button>
         <button class="register">Cadastre-se</button>
          </div>
+        
     </header>
    
         <div class="feed">
@@ -57,47 +61,11 @@
         </div>
 
         <h1>Nossos Amigos</h1>
-        <div class="pets">
-            <div class="card_pet">
-                <img class="pet_image" src="./icons/img-pet-1.jpg" alt="Cachorro 1">
-                <div class="pet_info">
-                <strong class="pet_name">Max</strong>
-                <p>Macho, 2 meses</p>
-                <p>São Paulo, SP</p>
-                </div>
-                <button class="ver_button" onclick="cardPets()">Ver Mais</button>
-            </div>
-            <div class="card_pet">
-                <img class="pet_image" src="./icons/img-pet-2.jpg" alt="Cachorro 2">
-                <div class="pet_info">
-                <strong class="pet_name">Bella</strong>
-                <p>Fêmea, 1 ano</p>
-                <p>Rio de Janeiro, RJ</p>
-                </div>
-                <button class="ver_button">Ver Mais</button>
-            </div>
-            <div class="card_pet">
-                <img class="pet_image" src="./icons/img-pet-3.jpg" alt="Cachorro 3">
-                <div class="pet_info">
-                <strong class="pet_name">Thor</strong>
-                <p>Macho, 6 meses</p>
-                <p>Belo Horizonte, MG</p>
-                </div>
-                <button class="ver_button">Ver Mais</button>
-            </div>
-            <div class="card_pet">
-                <img class="pet_image" src="./icons/img-pet-4.jpg" alt="Cachorro 4">
-                <div class="pet_info">
-                <strong class="pet_name">Luna</strong>
-                <p>Fêmea, 3 anos</p>
-                <p>Curitiba, PR</p>
-                </div>
-                <button class="ver_button">Ver Mais</button>
-            </div>
-        </div>
-
-
-
+        <div id="petsContainer" data-max-pets="4"></div>
+        <div class="mais_pets">
+            <button class="ver_mais" onclick="listaPets()">Veja todos os pets</button>
+          
+        
     <h1>Depoimentos</h1>
     <div class="depoimentos">
     <div class="depoimento">
