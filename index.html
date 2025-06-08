@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <button class="logo">AdoteAmor</button>
+        <div class="header_links">
+        <h6>Adote</h6>
+        <h6>Sobre</h6>
+        <h6>Doe</h6>
+        <h6>Contato</h6>
+         </div>
+         <div class="h_buttons">
+        <button class="login">Login</button>
+        <button class="register">Cadastre-se</button>
+         </div>
+    </header>
+   
+        <div class="feed">
+            <img class="banner" src="./banner.png" alt="banner dogs">
+            <div class="texto">
+                <strong class="titulo" >Encontre seu melhor amigo</strong>
+                <button class="adotar_cta" onclick="listaPets()">Buscar pets</button>
+            </div>
+        </div>
+        
+
+        <h1>Como funciona?</h1>
+        <div class="steps">
+            <div class="card">
+                <img class="icon" src="./icons/search_colored2.png" alt="ícone de escolha">
+                <div class="container">
+                <h4>Escolha</h4>
+                <p>Navegue entre os pets disponíveis e encontre aquele que combina com você e seu lar.</p>
+            </div>
+            </div>
+            <div class="card">
+                <img class="icon" src="./icons/heart_colored.png" alt="ícone de escolha">
+                <h4>Formulário</h4>
+                <p>Preencha um formulário simples com seus dados e informações sobre seu perfil como adotante.</p>
+            </div>
+            <div class="card">
+                <img class="icon" src="./icons/house_colored2.png" alt="ícone de escolha">
+                <h4>Entrevista</h4>
+                <p>Nossa equipe entrará em contato para uma conversa, esclarecer dúvidas e garantir uma adoção responsável.</p>
+            </div>
+            <div class="card">
+                <img class="icon" src="./icons/paw_colored2.png" alt="ícone de escolha">
+                <h4>Adoção</h4>
+                <p>Tudo certo? Agora é só receber seu novo melhor amigo em casa e começar uma nova história juntos.</p>
+            </div>                       
+        </div>
+
+        <h1>Nossos Amigos</h1>
+        <div class="pets">
+            <div class="card_pet">
+                <img class="pet_image" src="./icons/img-pet-1.jpg" alt="Cachorro 1">
+                <div class="pet_info">
+                <strong class="pet_name">Max</strong>
+                <p>Macho, 2 meses</p>
+                <p>São Paulo, SP</p>
+                </div>
+                <button class="ver_button" onclick="cardPets()">Ver Mais</button>
+            </div>
+            <div class="card_pet">
+                <img class="pet_image" src="./icons/img-pet-2.jpg" alt="Cachorro 2">
+                <div class="pet_info">
+                <strong class="pet_name">Bella</strong>
+                <p>Fêmea, 1 ano</p>
+                <p>Rio de Janeiro, RJ</p>
+                </div>
+                <button class="ver_button">Ver Mais</button>
+            </div>
+            <div class="card_pet">
+                <img class="pet_image" src="./icons/img-pet-3.jpg" alt="Cachorro 3">
+                <div class="pet_info">
+                <strong class="pet_name">Thor</strong>
+                <p>Macho, 6 meses</p>
+                <p>Belo Horizonte, MG</p>
+                </div>
+                <button class="ver_button">Ver Mais</button>
+            </div>
+            <div class="card_pet">
+                <img class="pet_image" src="./icons/img-pet-4.jpg" alt="Cachorro 4">
+                <div class="pet_info">
+                <strong class="pet_name">Luna</strong>
+                <p>Fêmea, 3 anos</p>
+                <p>Curitiba, PR</p>
+                </div>
+                <button class="ver_button">Ver Mais</button>
+            </div>
+        </div>
+
+
+
+    <h1>Depoimentos</h1>
+    <div class="depoimentos">
+    <div class="depoimento">
+        <div class="usuario">
+            <img class="img_redonda" src="./icons/photo-1494790108377-be9c29b29330.png" alt="avatar de usuário">
+            <div class="info">
+                <strong>Maria Silva</strong>
+                <span class="subtitulo">Adotou o Max</span>
+            </div>
+        </div>
+        <p>"Adotar o Max foi a melhor decisão da minha vida! Ele trouxe tanta alegria para nossa casa. O processo pelo site foi super fácil e rápido."</p>
+    </div>
+    <div class="depoimento">
+        <div class="usuario">
+            <img class="img_redonda" src="./icons/photo-1527980965255-d3b416303d12.png" alt="avatar de usuário">
+            <div class="info">
+                <strong>João Pereira</strong>
+                <span class="subtitulo">Adotou a Bella</span>
+            </div>
+        </div>
+        <p>"Encontrei a Bella aqui e não poderia estar mais feliz. O suporte da equipe foi incrível e ela se adaptou super bem!"</p>
+    </div>
+    <div class="depoimento">
+        <div class="usuario">
+            <img class="img_redonda" src="./icons/photo-1636631504829-15d682bd7d39.png" alt="avatar de usuário">
+            <div class="info">
+                <strong>Ana Costa</strong>
+                <span class="subtitulo">Adotou o Thor</span>
+            </div>
+        </div>
+        <p>"Recomendo muito! O site é muito organizado e seguro. Graças a ele, o Thor agora faz parte da nossa família."</p>
+        </div>
+    </div>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>    
+    <script src="script.js"></script>
+  
+   
+    <footer>
+        <button class="logo">AdoteAmor</button>
+        <div class="footer_links">
+            <h6>Início</h6>
+            <h6>Adote</h6>
+            <h6>Sobre</h6>
+            <h6>Doe</h6>
+            <h6>Contato</h6>
+        </div>
+        <div class="social_media">
+            <img class="icon" src="./icons/instagram_white.png" alt="Instagram" class="icon-white">
+            <img class="icon" src="./icons/facebook_white.png" alt="Facebook"class="icon-white">
+            <img class="icon" src="./icons/whatsapp_white.png" alt="whatsapp"class="icon-white">
+        </div>
+        <p>&copy; 2023 AdoteAmor. Todos os direitos reservados. </p>  
+         
+        </footer>
+    </body>
+</html> 
